@@ -1,0 +1,9 @@
+<%- include('partials/header') -%>
+<h1>The Shop</h1>
+
+<h2><%= product.shortDescription %></h2>
+<p><%= product.tagline %></p>
+<p>Price: EUR <%= product.price %></p>
+<% if (product.stockwarn) { %>
+<p>Last items in stock!</p>
+<% } %> <%- include('partials/footer') -%>
